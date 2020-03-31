@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>La chambre noire de Chino</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="gallery-clean.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+</head>
+<body>
+
+    <div class="container gallery-container main">
+
+        <h1>Collection World of faces</h1>
+
+        <p class="page-description text-center">By La chambre noire de Chino</p>
+
+        <div class="container">
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Qui est Chino ?</button>
+          
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+              
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Biographie</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p> Chino, de son vrai nom Jean-François de la rive droite, se passionne pour la photographie dès ses 8 ans. <br/> <br/>
+    
+                        Chino car cet éternel globe-trotter parcoure régulièrement les cinq continents afin de chiner pour vous des perles de beauté numériques introuvables ailleurs. <br/> <br/>
+                        
+                        Après un passage remarqué aux Beaux-Arts de Paris où il en sortit diplômé avec les honneurs et Major de sa promotion en 2012, il voulut sortir du chemin tout tracé auquel ses études prestigieuses l’avaient tout naturellement préparé. <br/> <br/>
+                        
+                        Ainsi, il entama plusieurs tours du monde dont vous trouverez sur ce site un aperçu de sa toute nouvelle collection sobrement baptisée « World of Faces ».<br/> <br/>
+                        
+                        Éclectique ! Tel est le qualificatif qui sied à merveille à cette brillante collection qui, cliché après cliché, vous transportera, vous emmènera loin des sentiers battus et autres pièges à touristes ; à la rencontre même de l’âme des habitants des pays qu’il a parcourus. <br/> <br/>
+                        
+                        Coupez votre téléphone, prenez une profonde respiration et préparez-vous à faire le voyage de votre vie à la découverte de vous-mêmes à travers le reflet du regard des autres…</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            
+          </div>
+       <br> <br>
+
+
+          <div class="container">
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Devenir Client</button>
+          
+            <!-- Modal -->
+            <div class="modal fade" id="myModal2" role="dialog">
+              <div class="modal-dialog">
+              
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Formulaire</h4>
+                  </div>
+                  <div class="modal-body">
+                    <form action="/controller/carloscreate_ctrl.php" method="POST">
+
+                        <br />
+                
+                        <div class="Sign in">
+                            <label for="nameinput">Votre email</label>
+                            <input type="text" id="nameinput" name="email">
+                        </div>
+                
+                        <br />
+                        <br />
+                
+                        <div>
+                            <label for="passwordinput">Votre mot de passe</label>
+                            <input type="password" id="passwordinput" name="mot_de_passe">
+                        </div>
+                
+                        <br />
+                        <br />
+                        
+                        <div>
+                            <input type="submit" value="Envoyer"/>
+                        </div>
+
+                    
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+        </form>
+          </div>
+
+
+          <br> <br>
+
+
+          <div class="container">
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">Déjà Client ?</button>
+          
+            <!-- Modal -->
+            <div class="modal fade" id="myModal3" role="dialog">
+              <div class="modal-dialog">
+              
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Veuillez vous connecter</h4>
+                  </div>
+                  <div class="modal-body">
+                    <form action="/controller/carloscreate_ctrl.php" method="POST">
+
+                        <br />
+                
+                        <div class="Log in">
+                            <label for="nameinput">Votre email</label>
+                            <input type="text" id="nameinput" name="email">
+                        </div>
+                
+                        <br />
+                        <br />
+                
+                        <div>
+                            <label for="passwordinput">Votre mot de passe</label>
+                            <input type="password" id="passwordinput" name="mot_de_passe">
+                        </div>
+                
+                        <br />
+                        <br />
+                        
+                        <div>
+                            <input type="submit" value="Envoyer"/>
+                        </div>
+
+                    
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+        </form>
+          </div>
+
+        
+        
+        <div class="tz-gallery">
+
+            <div class="row">
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="/images/celtes.jpg">
+                            <img src="/images/celtes.jpg" alt="Celtes">
+                        </a>
+                        <div class="caption">
+                            <h3>Celtes</h3>
+                            <p>Nul n’a pu les terrasser, pas même les glorieuses légions romaines…</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="/images/vieuxbarbu.jpg">
+                            <img src="/images/vieuxbarbu.jpg" alt="VieuxBarbu">
+                        </a>
+                        <div class="caption">
+                            <h3>Vieux Sage</h3>
+                            <p>Au-delà de ce charmant pléonasme, une question subsiste : est-ce la barbe qui fait le
+                                Sage ou la Sagesse qui rend le Sage barbu ?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="/images/indianbarbiegirl.jpg">
+                            <img src="/images/indianbarbiegirl.jpg" alt="indianbarbiegirl">
+                        </a>
+                        <div class="caption">
+                            <h3>Indian Barbie girl</h3>
+                            <p>Face aux injustices de Caste et au marasme économique : un
+                                sourire d’enfant illumine l'horizon lointain.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="/images/juche.jpg">
+                            <img src="/images/juche.jpg" alt="Juche">
+                        </a>
+                        <div class="caption">
+                            <h3>Juche</h3>
+                            <p>Noble principe du système nord-coréen (auto-suffisance), cette image unique au monde
+                                illustre le lourd tribu qui pèse sur les épaules de la nouvelle jeunesse nord-coréenne.
+                                Cet enfant deviendra t-il soldat ? Fuira t-il en Chine ? Mourra t-il de faim ? Jamais
+                                avons-nous vu pareille incertitude à l’échelle de tout un pays.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="/images/sadhu.jpg">
+                            <img src="/images/sadhu.jpg" alt="Sadhu">
+                        </a>
+                        <div class="caption">
+                            <h3>Sâdhu</h3>
+                            <p>Consacrant à sa vie à Shiva, il renonce à la société humaine pour mieux s’en libérer
+                                et atteindre l’osmose suprême.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="/images/hermano.jpg">
+                            <img src="/images/hermano.jpg" alt="Hermano">
+                        </a>
+                        <div class="caption">
+                            <h3>Hermano</h3>
+                            <p>Incarnation du tribal et du urban wear, l’avenir et la Paz (paix) de la Favela passe
+                                par cette génération nouvelle ; tantôt criminelle, tantôt Catholique.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script>
+        baguetteBox.run('.tz-gallery');
+    </script>
+
+<footer>©Chino, La chambre noire de Chino, World of Faces sont des marques déposées. Les photos et textes de ce site ne sont pas libres de droit. </footer>
+
+</body>
+
+</html>
