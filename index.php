@@ -172,24 +172,27 @@ try {
     <div class="container gallery-container main">
         <h1>World of faces</h1>
         <p class="page-description text-center">Chino</p>
-
         <div class="tz-gallery">
             <div class="row">
                 <?php
-                foreach ($result as $row) {
+                for ($i = 0; $i < count($result); $i++) {
+
                 ?>
                     <div class="col-sm-6 col-md-4">
                         <?php if (isset($_SESSION['mail'])) {
                         ?>
-                            <button type="button" type="hidden" class="btn btn-secondary center-block">Achat</button>
+                            <div class="text">
+                                <p></p>
+                            </div>
+                            <button type="button" type="hidden" onClick="test(<?php echo $i ?>)" id="<?php echo 'buy-btn-' . $i ?>" class="btn btn-secondary center-block">Achat</button>
                         <?php } ?>
                         <div class="thumbnail">
-                            <a class="lightbox" href="images/<?php echo $row['file_name']; ?>">
-                                <img src="images/<?php echo $row['file_name']; ?>" alt="Celtes">
+                            <a class="lightbox" href="images/<?php echo $result[$i]['file_name']; ?>">
+                                <img src="images/<?php echo $result[$i]['file_name']; ?>" alt="Celtes">
                             </a>
                             <div class="caption">
-                                <h3><?php echo $row['title'] ?></h3>
-                                <p><?php echo $row['text'] ?></p>
+                                <h3><?php echo $result[$i]['title'] ?></h3>
+                                <p><?php echo $result[$i]['text'] ?></p>
                             </div>
                         </div>
                     </div>
@@ -214,6 +217,15 @@ try {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
     <script>
         baguetteBox.run('.tz-gallery');
+
+        function test(index) {
+            var x = document.getElementById("buy-btn-" + index);
+            if (x.innerHTML === "Achat") {
+                x.innerHTML = "Merci pour votre Achat!";
+            } else {
+                x.innerHTML = "Achat";
+            }
+        }
     </script>
 </body>
 <footer class="text-center">©Chino, World of Faces sont des marques déposées. Les photos et textes de ce site ne sont pas libres de droit. </footer>
