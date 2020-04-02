@@ -12,11 +12,11 @@
 
 session_start();
 
-$old_sessionid = session_id();
+// $old_sessionid = session_id();
 
-session_regenerate_id();
+// session_regenerate_id();
 
-$new_sessionid = session_id();
+// $new_sessionid = session_id();
 
 // echo "Ancienne Session: $old_sessionid<br />";
 // echo "Nouvelle Session: $new_sessionid<br />";
@@ -164,6 +164,7 @@ try {
         </div>
     <?php
     } else {
+        setcookie("TestCookie", $_SESSION['mail'], time() + 1800);
     ?>
         <a href="controller/logout.php" type="button" class="btn btn-primary btn-sm">Log out</a>
         <span><?php echo $_SESSION['mail']; ?></span>
