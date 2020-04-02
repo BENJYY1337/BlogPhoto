@@ -11,6 +11,18 @@
  */
 
 session_start();
+
+$old_sessionid = session_id();
+
+session_regenerate_id();
+
+$new_sessionid = session_id();
+
+// echo "Ancienne Session: $old_sessionid<br />";
+// echo "Nouvelle Session: $new_sessionid<br />";
+
+// print_r($_SESSION);
+
 //On se connecte
 $DB_NAME = "blog_photo"; //database_name
 $DB_DSN = "mysql:host=127.0.0.1:3308;dbname=" . $DB_NAME; //database_datasourcename
@@ -203,7 +215,7 @@ try {
         baguetteBox.run('.tz-gallery');
     </script>
 </body>
-<footer class="text-center">©Chino, La chambre noire de Chino, World of Faces sont des marques déposées. Les photos et textes de ce site ne sont pas libres de droit. </footer>
+<footer class="text-center">©Chino, World of Faces sont des marques déposées. Les photos et textes de ce site ne sont pas libres de droit. </footer>
 
 </html>
 

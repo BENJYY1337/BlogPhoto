@@ -3,7 +3,7 @@ session_start();
 if (!(isset($_POST['Envoyer']))) {
     //var_dump($_POST);
     $mail = htmlspecialchars($_POST['mail']);
-    $password = htmlspecialchars(hash('Whirlpool', $_POST['mot_de_passe']));
+    $password = htmlspecialchars(hash('Whirlpool', $_POST['mot_de_passe'])); // hash pour la sécurité du pw
     /**
      * fonction create_user dans la bdd
      *
